@@ -1,0 +1,260 @@
+﻿  正在验证源
+  正在将源远程复制到“192.168.43.184”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  main.cpp
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.h(9,8): error : ‘Task’ is not a class template
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.h(9,8): error :     9 | struct Task<T> {
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.h(9,8): error :       |        ^~~~
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.h(40,16): error : ‘Task<T>’ is not a template
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(3,11): error : ‘T’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(3,12): error : template argument 1 is invalid
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(3,25): error : ‘int TaskQueue()’ redeclared as different kind of entity
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.h(23,7): message : previous declaration ‘template<class T> class TaskQueue’
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.h(23,7): message :    23 | class TaskQueue {
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.h(23,7): message :       |       ^~~~~~~~~
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(4,25): error : ‘m_mutex’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(4,25): error :     4 |     pthread_mutex_init(&m_mutex, NULL);
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(4,25): error :       |                         ^~~~~~~
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(5,1): warning : no return statement in function returning non-void [-Wreturn-type]
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(5,1): warning :     5 | }
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(5,1): warning :       | ^
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(7,11): error : ‘T’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(7,12): error : template argument 1 is invalid
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(11,16): error : ‘T’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(11,17): error : template argument 1 is invalid
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(11,33): error : ‘T’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(11,34): error : template argument 1 is invalid
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(13,25): error : ‘m_mutex’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(13,25): error :    13 |     pthread_mutex_lock(&m_mutex);
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(13,25): error :       |                         ^~~~~~~
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(14,5): error : ‘m_taskQ’ was not declared in this scope; did you mean ‘task’?
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(14,5): error :    14 |     m_taskQ.push(task);
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(14,5): error :       |     ^~~~~~~
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(14,5): error :       |     task
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(18,16): error : ‘T’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(18,17): error : template argument 1 is invalid
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(20,25): error : ‘m_mutex’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(20,25): error :    20 |     pthread_mutex_lock(&m_mutex);
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(20,25): error :       |                         ^~~~~~~
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(21,5): error : ‘m_taskQ’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(21,5): error :    21 |     m_taskQ.push(Task<T>(f, arg));
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(21,5): error :       |     ^~~~~~~
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(21,23): error : ‘T’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(21,23): error :    21 |     m_taskQ.push(Task<T>(f, arg));
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(21,23): error :       |                       ^
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(21,24): error : template argument 1 is invalid
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(21,24): error :    21 |     m_taskQ.push(Task<T>(f, arg));
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(21,24): error :       |                        ^
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(25,6): error : ‘T’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(25,7): error : template argument 1 is invalid
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(25,19): error : ‘T’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(25,20): error : template argument 1 is invalid
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(27,10): error : ‘T’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(27,10): error :    27 |     Task<T> t;
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(27,10): error :       |          ^
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(27,11): error : template argument 1 is invalid
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(27,11): error :    27 |     Task<T> t;
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(27,11): error :       |           ^
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(28,25): error : ‘m_mutex’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(28,25): error :    28 |     pthread_mutex_lock(&m_mutex);
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(28,25): error :       |                         ^~~~~~~
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(29,10): error : ‘m_taskQ’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(29,10): error :    29 |     if (!m_taskQ.empty()) {
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(29,10): error :       |          ^~~~~~~
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(16,23): error : ‘T’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(16,23): error :    16 |     void addTask(Task<T> task);
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(16,23): error :       |                       ^
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(16,24): error : template argument 1 is invalid
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(16,24): error :    16 |     void addTask(Task<T> task);
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(16,24): error :       |                        ^
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(38,15): error : ‘T’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(38,15): error :    38 |     TaskQueue<T>* taskQ;
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(38,15): error :       |               ^
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(38,16): error : template argument 1 is invalid
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(38,16): error :    38 |     TaskQueue<T>* taskQ;
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(38,16): error :       |                ^
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.cpp(82,6): error : no declaration matches ‘void ThreadPool< <template-parameter-1-1> >::addTask(Task<T>)’
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(16,10): message : candidate is: ‘void ThreadPool< <template-parameter-1-1> >::addTask(int)’
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(16,10): message :    16 |     void addTask(Task<T> task);
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(16,10): message :       |          ^~~~~~~
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(6,7): message : ‘class ThreadPool< <template-parameter-1-1> >’ defined here
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(6,7): message :     6 | class ThreadPool
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(6,7): message :       |       ^~~~~~~~~~
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.cpp(122,29): error : request for member ‘taskNumber’ in ‘pool->taskQ->’, which is of non-class type ‘int’
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.cpp(122,29): error :   122 |         while (pool->taskQ->taskNumber() == 0 && !pool->shutdown)
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.cpp(122,29): error :       |                             ^~~~~~~~~~
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.cpp(148,37): error : request for member ‘takeTask’ in ‘pool->taskQ->’, which is of non-class type ‘int’
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.cpp(148,37): error :   148 |         Task<T> task = pool->taskQ->takeTask();
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.cpp(148,37): error :       |                                     ^~~~~~~~
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.cpp(178,38): error : request for member ‘taskNumber’ in ‘pool->taskQ->’, which is of non-class type ‘int’
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.cpp(178,38): error :   178 |         int queueSize = pool->taskQ->taskNumber();
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.cpp(178,38): error :       |                                      ^~~~~~~~~~
+C:\Users\DELL\source\repos\linux2\linux2\main.cpp(23,22): error : cannot convert ‘Task<int>’ to ‘int’
+C:\Users\DELL\source\repos\linux2\linux2\main.cpp(23,22): error :    23 |         pool.addTask(Task<int>(taskFunc, num));
+C:\Users\DELL\source\repos\linux2\linux2\main.cpp(23,22): error :       |                      ^~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\DELL\source\repos\linux2\linux2\main.cpp(23,22): error :       |                      |
+C:\Users\DELL\source\repos\linux2\linux2\main.cpp(23,22): error :       |                      Task<int>
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(16,26): message : initializing argument 1 of ‘void ThreadPool< <template-parameter-1-1> >::addTask(int) [with <template-parameter-1-1> = int]’
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(16,26): message :    16 |     void addTask(Task<T> task);
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(16,26): message :       |                  ~~~~~~~~^~~~
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.cpp(14,15): error : cannot convert ‘TaskQueue<int>*’ to ‘int*’ in assignment
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.cpp(14,15): error :    14 |         taskQ = new TaskQueue<T>;
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.cpp(14,15): error :       |         ~~~~~~^~~~~~~~~~~~~~~~~~
+  TaskQueue.cpp
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.h(9,8): error : ‘Task’ is not a class template
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.h(9,8): error :     9 | struct Task<T> {
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.h(9,8): error :       |        ^~~~
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.h(40,16): error : ‘Task<T>’ is not a template
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(3,11): error : ‘T’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(3,12): error : template argument 1 is invalid
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(3,25): error : ‘int TaskQueue()’ redeclared as different kind of entity
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.h(23,7): message : previous declaration ‘template<class T> class TaskQueue’
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.h(23,7): message :    23 | class TaskQueue {
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.h(23,7): message :       |       ^~~~~~~~~
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(4,25): error : ‘m_mutex’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(4,25): error :     4 |     pthread_mutex_init(&m_mutex, NULL);
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(4,25): error :       |                         ^~~~~~~
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(5,1): warning : no return statement in function returning non-void [-Wreturn-type]
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(5,1): warning :     5 | }
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(5,1): warning :       | ^
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(7,11): error : ‘T’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(7,12): error : template argument 1 is invalid
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(11,16): error : ‘T’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(11,17): error : template argument 1 is invalid
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(11,33): error : ‘T’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(11,34): error : template argument 1 is invalid
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(13,25): error : ‘m_mutex’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(13,25): error :    13 |     pthread_mutex_lock(&m_mutex);
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(13,25): error :       |                         ^~~~~~~
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(14,5): error : ‘m_taskQ’ was not declared in this scope; did you mean ‘task’?
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(14,5): error :    14 |     m_taskQ.push(task);
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(14,5): error :       |     ^~~~~~~
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(14,5): error :       |     task
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(18,16): error : ‘T’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(18,17): error : template argument 1 is invalid
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(20,25): error : ‘m_mutex’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(20,25): error :    20 |     pthread_mutex_lock(&m_mutex);
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(20,25): error :       |                         ^~~~~~~
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(21,5): error : ‘m_taskQ’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(21,5): error :    21 |     m_taskQ.push(Task<T>(f, arg));
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(21,5): error :       |     ^~~~~~~
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(21,23): error : ‘T’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(21,23): error :    21 |     m_taskQ.push(Task<T>(f, arg));
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(21,23): error :       |                       ^
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(21,24): error : template argument 1 is invalid
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(21,24): error :    21 |     m_taskQ.push(Task<T>(f, arg));
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(21,24): error :       |                        ^
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(25,6): error : ‘T’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(25,7): error : template argument 1 is invalid
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(25,19): error : ‘T’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(25,20): error : template argument 1 is invalid
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(27,10): error : ‘T’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(27,10): error :    27 |     Task<T> t;
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(27,10): error :       |          ^
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(27,11): error : template argument 1 is invalid
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(27,11): error :    27 |     Task<T> t;
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(27,11): error :       |           ^
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(28,25): error : ‘m_mutex’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(28,25): error :    28 |     pthread_mutex_lock(&m_mutex);
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(28,25): error :       |                         ^~~~~~~
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(29,10): error : ‘m_taskQ’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(29,10): error :    29 |     if (!m_taskQ.empty()) {
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(29,10): error :       |          ^~~~~~~
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.h(1,9): warning : #pragma once in main file
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.h(1,9): warning :     1 | #pragma once
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.h(1,9): warning :       |         ^~~~
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.h(9,8): error : ‘Task’ is not a class template
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.h(9,8): error :     9 | struct Task<T> {
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.h(9,8): error :       |        ^~~~
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.h(40,16): error : ‘Task<T>’ is not a template
+  ThreadPool.cpp
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.h(9,8): error : ‘Task’ is not a class template
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.h(9,8): error :     9 | struct Task<T> {
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.h(9,8): error :       |        ^~~~
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.h(40,16): error : ‘Task<T>’ is not a template
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(3,11): error : ‘T’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(3,12): error : template argument 1 is invalid
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(3,25): error : ‘int TaskQueue()’ redeclared as different kind of entity
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.h(23,7): message : previous declaration ‘template<class T> class TaskQueue’
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.h(23,7): message :    23 | class TaskQueue {
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.h(23,7): message :       |       ^~~~~~~~~
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(4,25): error : ‘m_mutex’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(4,25): error :     4 |     pthread_mutex_init(&m_mutex, NULL);
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(4,25): error :       |                         ^~~~~~~
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(5,1): warning : no return statement in function returning non-void [-Wreturn-type]
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(5,1): warning :     5 | }
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(5,1): warning :       | ^
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(7,11): error : ‘T’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(7,12): error : template argument 1 is invalid
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(11,16): error : ‘T’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(11,17): error : template argument 1 is invalid
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(11,33): error : ‘T’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(11,34): error : template argument 1 is invalid
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(13,25): error : ‘m_mutex’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(13,25): error :    13 |     pthread_mutex_lock(&m_mutex);
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(13,25): error :       |                         ^~~~~~~
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(14,5): error : ‘m_taskQ’ was not declared in this scope; did you mean ‘task’?
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(14,5): error :    14 |     m_taskQ.push(task);
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(14,5): error :       |     ^~~~~~~
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(14,5): error :       |     task
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(18,16): error : ‘T’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(18,17): error : template argument 1 is invalid
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(20,25): error : ‘m_mutex’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(20,25): error :    20 |     pthread_mutex_lock(&m_mutex);
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(20,25): error :       |                         ^~~~~~~
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(21,5): error : ‘m_taskQ’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(21,5): error :    21 |     m_taskQ.push(Task<T>(f, arg));
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(21,5): error :       |     ^~~~~~~
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(21,23): error : ‘T’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(21,23): error :    21 |     m_taskQ.push(Task<T>(f, arg));
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(21,23): error :       |                       ^
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(21,24): error : template argument 1 is invalid
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(21,24): error :    21 |     m_taskQ.push(Task<T>(f, arg));
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(21,24): error :       |                        ^
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(25,6): error : ‘T’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(25,7): error : template argument 1 is invalid
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(25,19): error : ‘T’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(25,20): error : template argument 1 is invalid
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(27,10): error : ‘T’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(27,10): error :    27 |     Task<T> t;
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(27,10): error :       |          ^
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(27,11): error : template argument 1 is invalid
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(27,11): error :    27 |     Task<T> t;
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(27,11): error :       |           ^
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(28,25): error : ‘m_mutex’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(28,25): error :    28 |     pthread_mutex_lock(&m_mutex);
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(28,25): error :       |                         ^~~~~~~
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(29,10): error : ‘m_taskQ’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(29,10): error :    29 |     if (!m_taskQ.empty()) {
+C:\Users\DELL\source\repos\linux2\linux2\TaskQueue.cpp(29,10): error :       |          ^~~~~~~
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(16,23): error : ‘T’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(16,23): error :    16 |     void addTask(Task<T> task);
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(16,23): error :       |                       ^
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(16,24): error : template argument 1 is invalid
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(16,24): error :    16 |     void addTask(Task<T> task);
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(16,24): error :       |                        ^
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(38,15): error : ‘T’ was not declared in this scope
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(38,15): error :    38 |     TaskQueue<T>* taskQ;
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(38,15): error :       |               ^
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(38,16): error : template argument 1 is invalid
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(38,16): error :    38 |     TaskQueue<T>* taskQ;
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(38,16): error :       |                ^
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.cpp(82,6): error : no declaration matches ‘void ThreadPool< <template-parameter-1-1> >::addTask(Task<T>)’
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(16,10): message : candidate is: ‘void ThreadPool< <template-parameter-1-1> >::addTask(int)’
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(16,10): message :    16 |     void addTask(Task<T> task);
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(16,10): message :       |          ^~~~~~~
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(6,7): message : ‘class ThreadPool< <template-parameter-1-1> >’ defined here
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(6,7): message :     6 | class ThreadPool
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.h(6,7): message :       |       ^~~~~~~~~~
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.cpp(122,29): error : request for member ‘taskNumber’ in ‘pool->taskQ->’, which is of non-class type ‘int’
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.cpp(122,29): error :   122 |         while (pool->taskQ->taskNumber() == 0 && !pool->shutdown)
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.cpp(122,29): error :       |                             ^~~~~~~~~~
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.cpp(148,37): error : request for member ‘takeTask’ in ‘pool->taskQ->’, which is of non-class type ‘int’
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.cpp(148,37): error :   148 |         Task<T> task = pool->taskQ->takeTask();
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.cpp(148,37): error :       |                                     ^~~~~~~~
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.cpp(178,38): error : request for member ‘taskNumber’ in ‘pool->taskQ->’, which is of non-class type ‘int’
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.cpp(178,38): error :   178 |         int queueSize = pool->taskQ->taskNumber();
+C:\Users\DELL\source\repos\linux2\linux2\ThreadPool.cpp(178,38): error :       |                                      ^~~~~~~~~~
