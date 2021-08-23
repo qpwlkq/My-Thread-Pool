@@ -3,5 +3,6 @@
 
 使用Visual Stdio远程连接linux编写c/c++程序  
 
-C++: linux2
+C++: linux2  
+
 C: linux1
