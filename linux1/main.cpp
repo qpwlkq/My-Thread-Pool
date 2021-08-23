@@ -1,9 +1,8 @@
 #include <stdio.h>
-#include "ThreadPool.h"
-#include "ThreadPool.cpp"
-#include <pthread.h>
-#include <stdlib.h>
+#include <time.h>
 #include <unistd.h>
+#include <pthread.h>
+#include "threadpool.h"
 
 void taskFunc(void* arg)
 {
